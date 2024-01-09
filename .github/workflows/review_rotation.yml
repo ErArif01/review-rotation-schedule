@@ -1,0 +1,22 @@
+name: Review Rotation
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Schedule to run daily; adjust as needed
+
+jobs:
+  rotate_reviewer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Run Rotation Script
+      run: |
+        python .github/workflows/rotate_reviewer.py
