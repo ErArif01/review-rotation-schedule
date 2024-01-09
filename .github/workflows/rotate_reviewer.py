@@ -12,8 +12,8 @@ rotation_index = 0  # Update this based on your rotation logic
 current_reviewer = team_members[rotation_index]
 
 # PR details
-owner = 'your_username'
-repo = 'your_repository'
+owner = 'ErArif01'
+repo = 'review-rotation'
 pr_number = 123
 
 # GitHub API request to assign the reviewer
