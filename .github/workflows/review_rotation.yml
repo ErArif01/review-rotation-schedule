@@ -2,7 +2,7 @@ name: Review Rotation
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Schedule to run daily; adjust as needed
+    - cron: '* * * * *'  # Schedule to run daily; adjust as needed
 
 jobs:
   rotate_reviewer:
